@@ -14,3 +14,9 @@ A complete binary tree is a binary tree in which all the levels are completely f
 which is filled from the left. A complete binary tree is just like a full binary tree, but with two major differences.
 1. All filled except possibly the last lvl
 2. All the leaf elements must lean towards the left.
+
+
+Advantages of using a **complete binary tree**
+1 cache friendliness
+2 random access (we can establish parent child relationship)  .....MUST SEE THE SS ATTACHED
+3 minimum possible height
