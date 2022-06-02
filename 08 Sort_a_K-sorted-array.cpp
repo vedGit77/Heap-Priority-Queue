@@ -6,20 +6,20 @@ using namespace std;
 
 int sortK(int arr[], int n, int k) 
 { 
-	  priority_queue<int, vector<int>, greater<int> > pq; 
+    priority_queue<int, vector<int>, greater<int> > pq; 
     
-    for(int i=0;i<=k;i++)
+    for(int i=0;i<=k;i++) //time for thsi loop = O(K*log K)
         pq.push(arr[i]);
         
     int index = 0; 
-    for (int i = k + 1; i < n; i++) 
+    for (int i = k + 1; i < n; i++) //time for this loop = O((n-K)*log K)
     { 
       arr[index++] = pq.top(); 
       pq.pop(); 
       pq.push(arr[i]); 
     } 
 
-    while (pq.empty() == false) 
+    while (pq.empty() == false) //time for thsi loop = O(K*log K)
     { 
       arr[index++] = pq.top(); 
       pq.pop(); 
