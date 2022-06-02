@@ -3,6 +3,8 @@
 
 // Approach explained with code
 
+//Time: O(N*log K)
+
 
 #include <bits/stdc++.h>
 using namespace std;
