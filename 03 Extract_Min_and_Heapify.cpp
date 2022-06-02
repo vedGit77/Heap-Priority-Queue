@@ -1,7 +1,12 @@
+// Min-Heapify does this: Given a binary heap with 1 possible violation, fix the binary heap
 
-
-// extractMin(): Removes the minimum element from MinHeap. 
-//               Time Complexity of this Operation is O(Logn) as this operation needs to maintain the heap property (by calling heapify()) after removing root.
+//now forget if theres a voilation in the binary heap and think for getMin() and extractMin() functions:
+//1. getMin(): simply returns arr[0]...minimum most element in min heap
+//2. extractMin():REMOVES the minimum element from MinHeap. 
+//               :so basically it swaps the min element (arr[0]) with the last element(arr[n-1]...NOT surely largest)
+//               :then it decreases size...(size--)....and applies min-heapify to arr (with 1 size smaller)
+//               :so now our remaining heap is fixed
+//               :Time Complexity of this Operation is O(Logn) as this operation needs to maintain the heap property (by calling heapify()) after removing root.
   
   #include <bits/stdc++.h> 
 using namespace std; 
