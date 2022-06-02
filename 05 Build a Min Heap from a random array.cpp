@@ -16,7 +16,7 @@
 
 //in simple words: do this->
 //  for(int i=(size-2)/2;i>=0;i--) 
-//             minHeapify(i);
+//             minHeapify(i); .... since we want to create a min heap
 
 
 #include <bits/stdc++.h> 
