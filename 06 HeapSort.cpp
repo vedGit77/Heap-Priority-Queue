@@ -1,3 +1,11 @@
+//Modification of selection sort
+//Time: O(N*log N)
+//UN-stable algo
+
+//here we use MAX-HEAP...since we want in ascending
+
+//for descending...use MIN-HEAP
+
 #include <iostream> 
 using namespace std; 
 
@@ -21,17 +29,17 @@ void heapify(int arr[], int n, int i)
 } 
 
 void buildheap(int arr[],int n){
-    for (int i = n / 2 - 1; i >= 0; i--) 
-		heapify(arr, n, i);
+    for (int i = (n-2)/2 ; i >= 0; i--) //i have already explained the reason for (n-2)/2
+	heapify(arr, n, i);
 }
 void heapSort(int arr[], int n) 
 {  
-    buildheap(arr,n); 
+    buildheap(arr,n); //first build a heap 
 
     for (int i=n-1; i>0; i--) 
     { 
-      swap(arr[0], arr[i]);
-      heapify(arr, i, 0); 
+      swap(arr[0], arr[i]);//basically arr[0] will be the max element bw 0 and i...swapping means we have sorted the array from i to n-1
+      heapify(arr, i, 0); //heapify for arr[0] to arr[i-1] and repeat....
     } 
 } 
 
