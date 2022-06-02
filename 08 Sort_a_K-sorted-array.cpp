@@ -1,6 +1,13 @@
 // Given an array of n elements, where each element is at most k away from its target position, devise an algorithm that sorts in O(n log k) time. 
 // For example, let us consider k is 2, an element at index 7 in the sorted array, can be at indexes 5, 6, 7, 8, 9 in the given array.
 
+// Approach: SUPER SIMPLE!
+// We will make a priority queue using MIN heap of size k....so that top element returns the minimum element
+// we will remove the 1st element, and add a new one which was not in the queue initially...say priority queue was from (i to i+k-1), now remove the 1st element, and add the (i+k)th element....continue this...
+// this will return us a sorted array
+
+
+
 #include <bits/stdc++.h> 
 using namespace std; 
 
