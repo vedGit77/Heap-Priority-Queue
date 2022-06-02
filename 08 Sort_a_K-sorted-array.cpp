@@ -13,7 +13,7 @@ using namespace std;
 
 int sortK(int arr[], int n, int k) 
 { 
-    priority_queue<int, vector<int>, greater<int> > pq; 
+    priority_queue<int, vector<int>, greater<int>> pq; //pq using MIN heap!
     
     for(int i=0;i<=k;i++) //time for thsi loop = O(K*log K)
         pq.push(arr[i]);
@@ -25,7 +25,8 @@ int sortK(int arr[], int n, int k)
       pq.pop(); 
       pq.push(arr[i]); 
     } 
-
+    
+    //once we have no more elements to add, but we still have to pop...that time this while loop comes into play
     while (pq.empty() == false) //time for thsi loop = O(K*log K)
     { 
       arr[index++] = pq.top(); 
