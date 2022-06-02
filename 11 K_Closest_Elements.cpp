@@ -11,7 +11,7 @@ using namespace std;
 
 void printKClosest(int arr[], int n, int k, int x)
 {
-    priority_queue<pair<int, int> > pq; //max heap...each element is a pair...the pair is {abs(arr[i]-x) , i}
+    priority_queue<pair<int, int> > pq; //max heap...each element is a pair...the pair is {abs(arr[i]-x) , i}...for pq with pairs, its sorted as per the FIRST element
     for (int i = 0; i < k; i++) //push for the first k elements
         pq.push({ abs(arr[i] - x), i }); 
   
