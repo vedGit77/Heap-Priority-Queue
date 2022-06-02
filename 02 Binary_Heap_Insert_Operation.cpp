@@ -1,9 +1,9 @@
 //we are implementing MIN heap
-//the *complete binary tree* is just for visualization...actually no's are stored in an array
-
 //in MIN heap...the parent is smaller than its children
 
-//time complexity of insert operation in MIN heap = O(log N)...because we trvel along the height of the complete binary tree
+//time complexity of insert operation in MIN heap = O(log N)...because we travel along the height of the complete binary tree
+//the *complete binary tree* is just for visualization...actually no's are stored in an array
+
 
 #include <bits/stdc++.h> 
 using namespace std; 
