@@ -1,10 +1,11 @@
 // Priority queue basically uses MAX heap data structure
 //we can alter it to work on min heap too
 
-// .push() function pushes an element into the priority queue...basically uses the insert in heap...see 02 file
-// .top() returns the topmost element....ie ALWAYS THE LARGEST ELEMENT
-// .pop() deletes the topmost element...checkout for delete in 04 file
-// .size() returns the number of elements in the priority queue
+// .push() function pushes an element into the priority queue...basically uses the insert in heap...see 02 file ...time O(logN)
+// .pop() deletes the topmost element...checkout for delete in 04 file...time O(logN)
+// .top() returns the topmost element....ie ALWAYS THE LARGEST ELEMENT...time O(1)
+// .size() returns the number of elements in the priority queue....time O(1)
+// .empty()...returns true if empty...time O(1)
 
 //if we implement using MIN heap...then .top() would display the SMALLEST element 
 // priority_queue <int,vector<int>,greater<int>> pq; ....this way for operation using MIN heap
