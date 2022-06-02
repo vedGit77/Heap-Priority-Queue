@@ -56,7 +56,7 @@ class MinHeap{
     }
     
     void buildHeap(){
-        for(int i=(size-2)/2;i>=0;i--) //position of the last non-leaf node is (size-2)/2...always
+        for(int i=(size-2)/2;i>=0;i--) //position of the last non-leaf node is (size-2)/2...logic: last node has index n-1...so its parent has an indes (n-1-1)/2
             minHeapify(i);
     }
     
