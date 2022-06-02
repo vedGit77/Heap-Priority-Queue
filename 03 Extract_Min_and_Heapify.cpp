@@ -64,18 +64,18 @@ class MinHeap{
     
     int extractMin() 
     { 
-        if (size <= 0) 
+        if (size <= 0) //if already of zero size
             return INT_MAX; 
-        if (size == 1) 
+        if (size == 1) //if size==1
         { 
             size--; 
             return arr[0]; 
         }  
-        swap(arr[0],arr[size-1]);
-        size--; 
-        minHeapify(0); 
+        swap(arr[0],arr[size-1]); //swap them
+        size--; //decrease the size
+        minHeapify(0); //fix the heap
 
-        return arr[size]; 
+        return arr[size];//return the smallest element..the one we swapped initially...now its at arr[size] posn...since we did (size--)
     } 
     
 };
