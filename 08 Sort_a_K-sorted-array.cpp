@@ -3,7 +3,7 @@
 
 // Approach: SUPER SIMPLE!
 // We will make a priority queue using MIN heap of size k....so that top element returns the minimum element
-// we will remove the 1st element, and add a new one which was not in the queue initially...say priority queue was from (i to i+k-1), now remove the 1st element, and add the (i+k)th element....continue this...
+// we will remove the 1st element, and add the last+1 in the queue...say priority queue was from (i to i+k-1), now remove the 1st element, and add the (i+k)th element....continue this...
 // this will return us a sorted array
 
 
