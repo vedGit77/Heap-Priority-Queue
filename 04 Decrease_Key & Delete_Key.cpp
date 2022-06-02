@@ -1,3 +1,12 @@
+//Decrease key: basically we take some index i, and update the value at this index to some new value x
+//            : for this, we update the value and compare it with its parent...
+//            : take care of the case when parent is the root, in that case x becomes the new root
+
+//Delete key: obvio...delete a key from the heap...
+//          : step 1-> change the value of the element to be deleted to INT_MIN
+//          : step 2->apply decrease key function...so now INT_MIN becomes the root
+//          : step 3-> apply the extractMin function
+
 #include <bits/stdc++.h> 
 using namespace std; 
 
