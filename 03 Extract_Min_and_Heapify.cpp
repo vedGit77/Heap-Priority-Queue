@@ -8,6 +8,11 @@
 //               :so now our remaining heap is fixed
 //               :Time Complexity of this Operation is O(Logn) as this operation needs to maintain the heap property (by calling heapify()) after removing root.
   
+
+//in this code...we will discuss extractMin()...ie given a binary heap, extract the smallest element and fix the remaining heap...
+//now obvio...extractMin will use minHeapify to fix the remining heap
+
+
   #include <bits/stdc++.h> 
 using namespace std; 
 
