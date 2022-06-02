@@ -14,6 +14,11 @@
 // So the idea is to find the position of the last non-leaf node and perform the heapify operation of each non-leaf node in reverse level order. 
 
 
+//in simple words: do this->
+//  for(int i=(size-2)/2;i>=0;i--) 
+//             minHeapify(i);
+
+
 #include <bits/stdc++.h> 
 using namespace std; 
 
