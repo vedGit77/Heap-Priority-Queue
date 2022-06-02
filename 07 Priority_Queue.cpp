@@ -15,11 +15,22 @@
 using namespace std;
 
 int main(){
-    priority_queue <int> pq;
-//     priority_queue <int,vector<int>,greater<int>> pq;   // do this way for applying using min heap
-    pq.push(10);
+    //2 ways to make
+    priority_queue <int> pq;//way 1: using MAX heap
+    priority_queue <int,vector<int>,greater<int>> pq; //way 2: using MIN heap
+    
+    //3 ways to push
+    pq.push(10);//way 1: simply push...this is like insert in a binary heap...so to insert n elements...time = O(N*logN)...O(logN) for each element
     pq.push(15);
     pq.push(5);
+    
+    int arr[]={10,5,15}
+    priority_queue<int>pq(arr,arr+3);//way 2: pq(begin iterator , end iterator + 1)...way 2&3 better than way 1...as it uses Build heap function...O(N) total time
+    
+    vector<int>v = {10,5,15};
+    priority_queue<int>pq(v.begin(),v.end());//way 3: pq(begin iterator , end iterator +1)
+    
+    
     cout<<pq.size()<<" ";
     cout<<pq.top()<<" ";
     while(pq.empty()==false)
