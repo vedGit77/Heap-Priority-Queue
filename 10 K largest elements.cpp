@@ -2,7 +2,7 @@
 
 //Method 2: use max heap...priority queue...time = O(N + k*log N)....N for building the max heap, and K*logN for extracting the K greatest elements
 
-//Method 3: using min heap...priority queue...time = O(K + (N-K)*log K)
+//Method 3: using min heap...priority queue...time = O(K + (N-K)*log K)...better in general
 
 #include <bits/stdc++.h>
 using namespace std;
