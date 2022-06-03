@@ -22,8 +22,8 @@ void printMedians(int arr[],int n){
               g.push(x);
           cout<<(s.top()+g.top())/2.0<<" ";
         }
-      else
-      {
+        else
+        {
             if(x<=s.top())
             {
                 s.push(x);
